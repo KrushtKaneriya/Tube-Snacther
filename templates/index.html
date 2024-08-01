@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tube snacher</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container above-center">
+        <form id="downloadForm" method="post">
+            <div class="input-wrapper">
+                <input type="text" name="url" id="urlInput" placeholder="Paste Your URL..." required>
+                <button type="submit" class="button">Download</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="container below-container" id="responseContainer"></div> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
